@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 h1 {
@@ -11,29 +11,16 @@ h1 {
     font-family: "calibri";
 }
 h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-family: "calibri";
 }
 li {
-   font-size: 24px;
+   font-size: 18px;
    font-family: "calibri";
 }
-.bg1 {
-    /* The image used */
-    background-image: url("health_network.png");
-
-    /* Set a specific height */
-    min-height: 300px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.affix {
-      top: 0;
-      width: 100%;
+a {
+   font-size: 24px;
+   font-family: "calibri";
 }
 </style>
 </head>
@@ -64,34 +51,22 @@ li {
 	<br>
 	<h1>Experience</h1>
 </div>
-
-<div class="bg1"></div>
-
-<div class="well well-lg" align="left">
-<h2>Antimicrobial Stewardship Program, North York General Hospital, Toronto, ON: January 2017-March 2017</h2>
-		<ul>
-			<li>Prepared an impact analysis for a hospital formulary drug addition which was to be reviewed by the Pharmacy & Therapeutics Committee</li>
-			<li>Evaluated the appropriateness of antimicrobials according to hospital guidelines and best available evidence in infectious disease literature</li>
-			<li>Provided recommendations and education to physicians and pharmacists with regards to antimicrobial therapy</li>
-		</ul>
-<h2>North Peel Family Health Team, Brampton, ON: August 2016-December 2016</h2>
+<div class="container">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">In the Pharmacy</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+        <h2>North Peel Family Health Team, Brampton, ON: August 2016-December 2016</h2>
 		<ul>
 			<li>Performed medication reviews, prepared care plans and gave recommendations to prescribers</li>
 			<li>Provided drug information and updated other health professionals on the most current evidenced-based research</li>
 		</ul>
-<h2>Drug Safety Associate, Janssen, Toronto, ON: November 2015-August 2016</h2>
-		<ul>
-			<li>Evaluated and assessed adverse event reports and their regulatory status in French and English</li>
-			<li>Processed adverse events reports from spontaneous sources, clinical trial studies and marketing activities in accordance with company standard operating procedures and regulatory guidelines</li>
-			<li>Performed quality assessments on adverse event reports</li>
-		</ul>
-<h2>Medication Safety Specialist Consultant, ISMP Canada, Toronto, ON: July 2015-present</h2>
-		<ul>
-			<li>Analyzed, interpreted and provided recommendations for medication incidents</li> 
-			<li>Prepared workshops geared towards teaching professionals how to manage medication errors</li>
-			<li>Developed the Community Pharmacy Incident Reporting (CPhIR) French Web site</li>
-		</ul>
-<h2>Michael Garron Hospital, Toronto, ON: November 2014-April 2015</h2>
+        <h2>Michael Garron Hospital, Toronto, ON: November 2014-April 2015</h2>
 		<ul>
 			<li>Excelled at performing all pharmacist responsibilities under the supervision of the pharmacist including checking prescriptions, counselling patients, performing MedsChecks and managing workflow</li>
 		</ul>
@@ -103,19 +78,84 @@ li {
 		<ul>
 			<li>Performed technical duties including filling prescriptions, preparing blister packs and checking prescriptions</li>
 		</ul>
-<h2>Market Access Associate, Wyatt Health Management, Oakville, ON: August 2011-December 2011</h2>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Formulary Work</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+	<h2>Antimicrobial Stewardship Program, North York General Hospital, Toronto, ON: January 2017-March 2017</h2>
+		<ul>
+			<li>Prepared an impact analysis for a hospital formulary drug addition which was to be reviewed by the Pharmacy & Therapeutics Committee</li>
+			<li>Evaluated the appropriateness of antimicrobials according to hospital guidelines and best available evidence in infectious disease literature</li>
+			<li>Provided recommendations and education to physicians and pharmacists with regards to antimicrobial therapy</li>
+		</ul>
+	<h2>Market Access Associate, Wyatt Health Management, Oakville, ON: August 2011-December 2011</h2>
 		<ul>
 			<li>Involved in the preparation of drug submissions to provincial public plans</li>
 		</ul>
-<h2>Summer Student Researcher, Princess Margaret Hospital, Toronto, ON: May 2008-August 2008</h2>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Patient Safety</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+	<h2>Medication Safety Specialist Consultant, ISMP Canada, Toronto, ON: July 2015-present</h2>
+		<ul>
+			<li>Analyzed, interpreted and provided recommendations for medication incidents</li> 
+			<li>Prepared workshops geared towards teaching professionals how to manage medication errors</li>
+			<li>Developed the Community Pharmacy Incident Reporting (CPhIR) French Web site</li>
+		</ul>
+	<h2>Drug Safety Associate, Janssen, Toronto, ON: November 2015-August 2016</h2>
+		<ul>
+			<li>Evaluated and assessed adverse event reports and their regulatory status in French and English</li>
+			<li>Processed adverse events reports from spontaneous sources, clinical trial studies and marketing activities in accordance with company standard operating procedures and regulatory guidelines</li>
+			<li>Performed quality assessments on adverse event reports</li>
+		</ul>
+	</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Research</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+	<h2>Summer Student Researcher, Princess Margaret Hospital, Toronto, ON: May 2008-August 2008</h2>
 		<ul>
 			<li>Conducted a self-directed research project in the Radiation Medicine Program with input from the clinical supervisor</li>
 		</ul>
-<h2>Quality Control Analyst, GlaxoSmithKline, Mississauga, ON: May 2007-August 2007</h2>
+	</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Quality Control by GMP Guidelines</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">
+	<h2>Quality Control Analyst, GlaxoSmithKline, Mississauga, ON: May 2007-August 2007</h2>
 		<ul>
 			<li>Analyzed and tested raw materials for many life-saving drugs</li>
 		</ul>
-</div>
-
+	</div>
+      </div>
+    </div>
+  </div> 
+</div>    
 </body>
 </html>
