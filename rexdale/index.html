@@ -1,0 +1,202 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url("pw_maze_white.png");
+  background-attachment: fixed;
+}
+li {
+   font-size: 24px;
+   font-family: "calibri";
+}
+.jumbotron {
+  background-color: #1e3f49;
+}
+.jumbotron h1 {
+  color: #e2dad4;
+}
+p {
+  color: #e2dad4;
+}  
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+} 
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+} 
+.carousel-caption {
+    text-shadow: 0 1px 4px rgba(0,0,0,.9);
+  font-size:17px
+}
+.carousel-caption h3 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+    html,
+    body,
+    .carousel,
+    .carousel-inner,
+    .carousel-inner .item {
+      height: 100%;
+    } 
+    .item:nth-child(1) {
+      background: url('crowne_plaza.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(2) {
+      background: url('woodbine.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(3) {
+      background: url('humber.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+.middle {
+  box-shadow: 10px 10px 5px #0f1b19;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.text {
+  text-align: center;
+  font-weight: normal;
+  background-color: #1e3f49;
+  color: #e2dad4;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+a {
+  color: #e2dad4;
+}
+a:visited {
+  color: #e2dad4;
+}
+a:hover {
+  color: #e2dad4;
+}
+.item:hover .middle {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Explore Rexdale</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="sightseeing.html">Sightseeing</a></li>
+      <li><a href="entertainment.html">Entertainment</a></li>
+      <li><a href="dining.html">Dining</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<div style='text-align:center;'>
+<div class="jumbotron">
+    <br>
+    <h1>Explore Rexdale</h1> 
+    <p>Great scenery, dining, and entertainment -- minutes from Pearson</p>
+  </div>
+</div>
+    <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">  
+                <div class="middle">
+                  <div class="text">Crowne Plaza</div>
+                </div>
+            </div>
+            <div class="item"> 
+                <div class="middle">
+                  <div class="text"><a href="#">Woodbine Racetrack</a>
+                  </div>
+                </div>
+            </div>
+            <div class="item"> 
+                <div class="middle">
+                  <div class="text"><a href="#">Humber Arboretum</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
