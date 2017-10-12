@@ -1,0 +1,164 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url("pw_maze_white.png");
+  background-attachment: fixed;
+}
+li {
+   font-size: 24px;
+   font-family: "calibri";
+}
+.jumbotron {
+  background-color: #1e3f49;
+}
+.jumbotron h1 {
+  color: #e2dad4;
+}
+p {
+  color: #e2dad4;
+}  
+a {
+  color: #e2dad4;
+}
+a:visited {
+  color: #e2dad4;
+}
+a:hover {
+  color: #e2dad4;
+} 
+.tab-content {
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding:10px;
+}
+.nav-tabs > li > a{
+  border: medium none;
+  color: #1e3f49;
+}
+.nav-tabs > li > a:hover{
+  background-color: #e2dad4;
+  border: medium none;
+  border-radius: 0;
+  color: #1e3f49;
+} 
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  box-shadow: 10px 10px 5px #0f1b19;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 1;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  text-align: center;
+  font-weight: normal;
+  background-color: #1e3f49;
+  color: #e2dad4;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Explore Rexdale</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="sightseeing.html">Sightseeing</a></li>
+      <li><a href="entertainment.html">Entertainment</a></li>
+      <li><a href="dining.html">Dining</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<div style='text-align:center;'>
+<div class="jumbotron">
+    <br>
+    <h1>Explore Rexdale</h1> 
+    <p>Great scenery, dining and entertainment -- minutes from Pearson</p>
+  </div>
+</div>
+<div class="container">
+  <h2>Sightseeing</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#menu1">Humber Arboretum</a></li>
+    <li><a data-toggle="tab" href="#menu2">Pan Am Path</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="menu1" class="tab-pane fade in active">
+      <p><font size="3" face="calibri" color="#1e3f49">
+205 Humber College Boulevard
+<br>
+As stated on the Humber Arboretum Web site: "The Humber Arboretum exists to establish and maintain living plant collections, demonstrate correct horticultural and arboricultural techniques, conserve and restore natural areas and wildlife, facilitate research and education, and provide a welcoming space for people to gather."  
+</font></p>
+<br>
+	<div class="container">
+	<img src="humber.jpg" class="image" width="100%">
+	<div class="middle">
+	<div class="text">
+	<a href="http://www.humber.ca/arboretum">www.humber.ca</a>
+	</div>
+	</div>
+	</div>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <p><font size="3" face="calibri" color="#1e3f49">
+Runs across Toronto; accessible from Humber College and Esther Lorrie Park in Rexdale
+<br>
+The Humber River Recreational Trail has been a part of the Rexdale landscape for years, but was revitalized and turned into a legacy gift of the 2015 Pan Am Games in Toronto.  A pleasant and scenic bike ride, rollerblade, or walk in itself, the Pan Am Path also provides quirky opportunities to try out other physical activities, like rope climbing and chin-ups.  If you enjoy your stroll too much, you might find yourself in downtown Toronto.    
+      </font></p>
+<br>
+	<div class="container">
+	<img src="panam_path.jpg" class="image" width="100%">
+	<div class="middle">
+	<div class="text">
+	<a href="http://www.panampath.org">www.panampath.org</a>
+	</div>
+	</div>
+	</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
