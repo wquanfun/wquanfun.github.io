@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hockey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+@media screen and (min-width: 501px) and (max-width: 2000px) {
+  #small { 
+	display: none; 
+  }  /* show it on small screens */
+  #wjhc2015_logo {
+        display: none;
+  }
+  #wch_logo {
+        display: none;
+  }
+  #centennial_logo {
+        display: none;
+  }
+  #wjhc2017_logo {
+        display: none;
+  }
+  #large {
+	display: block;
+  }
+  #wjhc2015 {
+        display: block;
+  }
+  #wch {
+        display: block;
+  }
+  #centennial {
+        display: block;
+  }
+  #wjhc2017 {
+        display: block;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #small { 
+	display: block; 
+  }  /* show it on small screens */
+  #wjhc2015_logo {
+        display: block;
+  }
+  #wch_logo {
+        display: block;
+  }
+  #centennial_logo {
+        display: block;
+  }
+  #wjhc2017_logo {
+        display: block;
+  }
+  #large {
+	display: none;
+  }
+  #wjhc2015 {
+        display: none;
+  }
+  #wch {
+        display: none;
+  }
+  #centennial {
+        display: none;
+  }
+  #wjhc2017 {
+        display: none;
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fddb73;
+}
+.jumbotron {
+    /* add bootstrap jumbotron background image */
+    background-color: #004c91;
+    /* change bootstrap jumbotron text color */
+    color: #FFF;
+}
+.well {
+    background-color: #004c91;
+    color: #FFF;
+}
+.bg1 {
+    /* The image used */
+    background-image: url("2015_wjhc.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg2 {
+    /* The image used */
+    background-image: url("2016_wch.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg3 {
+    /* The image used */
+    background-image: url("2017centennial.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg4 {
+    /* The image used */
+    background-image: url("2017_wjhc.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg5 {
+    /* The image used */
+    background-image: url("2015wjhc_logo.png");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.bg6 {
+    /* The image used */
+    background-image: url("2016wch_logo.png");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg7 {
+    /* The image used */
+    background-image: url("2017centennial_logo.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg8 {
+    /* The image used */
+    background-image: url("2017wjhc_logo.png");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.affix {
+      top: 0;
+      width: 100%;
+} 
+</style>
+</head>
+<body>
+<div class="container" id="small" data-spy="affix">
+  <div class="btn-group btn-group-justified" role="group" width="100%">
+    <a href="index.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="home.png"></button>
+    </a>
+    <a href="multisport.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="games.png"></button>
+    </a>
+    <a href="hockey.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="hockey.png"></button>
+    </a>
+    <a href="basketball.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="basketball.png"></button>
+    </a>
+    <a href="volleyball.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="volleyball.png"></button>
+    </a>
+  </div>
+</div>
+<div class="container" id="large" data-spy="affix">
+  <div class="btn-group btn-group-justified" role="group" width="100%">
+    <a href="index.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Home</button>
+    </a>
+    <a href="multisport.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Multi-sport Events</button>
+    </a>
+    <a href="hockey.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Hockey</button>
+    </a>
+    <a href="basketball.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Basketball</button>
+    </a>
+    <a href="volleyball.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Beach Volleyball</button>
+    </a>
+  </div>
+</div>
+<div class="jumbotron" align="center">
+<br>
+<h1>Hockey</h1>
+</div>
+
+<div class="bg1" id="wjhc2015"></div>
+<div class="bg5" id="wjhc2015_logo"></div>
+
+<div class="well well-lg" align="left">
+<h2>IIHF World Junior Hockey Championship (Winter of 2015)</h2>
+<p>
+Despite Canada being one of the world's hockey powers, Canada seldom ever hosts international tournaments.  This is because the IIHF believes that international hockey sells more tickets in Europe.  However, this is not the only reason we should be surprised that this tournament came to Toronto.  It was also significant that a large metropolitan city like Toronto was hosting a junior hockey event, which typically has a greater following in more rural areas of North America.  This is evidenced by previous hosts such as Buffalo and Grand Forks in the United States and Kamloops, Kelowna, and Saskatoon in Canada.  In this edition of the tournament, the host nation Canada won the gold medal over longtime rival Russia, and Slovakia surprised the world by winning the bronze medal, defeating world junior hockey power Sweden.  This tournament featured future NHL players William Nylander (Sweden) of the Toronto Maple Leafs, Max Domi (Canada) of the Phoenix Coyotes, and eventual 2017 MVP Connor McDavid (Canada) of the Edmonton Oilers.  
+</p> 
+</div>
+
+<div class="bg2" id="wch"></div>
+<div class="bg6" id="wch_logo"></div>
+
+<div class="well well-lg" align="left">
+<h2>World Cup of Hockey (Summer of 2016)</h2>
+<p>
+The World Cup of Hockey, being held for the first time since 2004, is a one-of-a-kind international hockey tournament that isn't sanctioned by the IIHF.  It is funded by the NHL and played on NHL-sized rinks with NHL rules.  In contrast to the IIHF's approach to selling international hockey, the NHL hosted the World Cup in Toronto, a major NHL market, and replaced several fringe international teams with two amalgamated teams, Team Europe and Team North America.  The presence of these two new teams played a significant role in driving up interest in the tournament.  Could players from eight different European nations gel as a team, with limited preparation time?  What national anthem would be played if they won the whole tournament?  Could Canadian and American players gel as a team, freshly after competing fiercely against each other at previous World Junior tournaments?  In the end, these questions were moot points, as the World Cup would go on to be remembered as the greatest display of speed and skill in international hockey, in recent memory.  After struggling to keep up with the lightning-fast Team North America (comprised of players all under the age of 23), the aging Team Europe survived and made it all the way to the final against Canada, who went on to win the World Cup.  In addition to highlighting Toronto as a hockey city, other aspects of the city joined the party, as the Fan Village descended on the city's Distillery District, complete with a concert series and special, free performances by world-reknowned illusionist Darcy Oake.  Attentive TV viewers will remember another nuance of this tournament, the use of virtual advertising on the boards during live action.  If you were observant, you would have noticed that "Tim Hortons - Canada's Favourite Coffee" would be displayed all along the boards during the game, but would disappear (in favour of the real boards) during instant replays.  Pictured above, Sweden and Europe clash; goaltender Jaroslav Halak originates from Slovakia, one of the eight nations in Team Europe.
+</p>
+</div>
+
+<div class="bg3" id="centennial"></div>
+<div class="bg7" id="centennial_logo"></div>
+
+<div class="well well-lg" align="left">
+<h2>NHL Centennial Classic (Winter of 2017)</h2>
+<p>
+To celebrate the 100th anniversary of one of the most storied franchises in professional hockey, the NHL held an outdoor game in Toronto, in addition to its regularly scheduled Winter Classic.  Although the "outdoor game" has been somewhat overdone by the NHL in recent years, the tradition of having this one in Toronto brought out the best it had to offer.  BMO Field, traditionally the home of soccer club Toronto FC, was transformed into the cradle of professional hockey.  "Cradle" is an appropriate term here, as the game highlighted the ascendance of the hometown Toronto Maple Leafs as a playoff team despite their youth and inexperience, and the emergence of a future superstar in 19-year old Auston Matthews, who scored the game-winner in overtime and went on to finish his rookie season with 40 goals.  
+</p>
+</div>
+
+<div class="bg4" id="wjhc2017"></div>
+<div class="bg8" id="wjhc2017_logo"></div>
+
+<div class="well well-lg" align="left">
+<h2>IIHF World Junior Hockey Championship (Winter of 2017)</h2>
+<p>
+What is more strange than holding the World Junior Hockey Championship in a metropolitan North American city?  Doing it again two years later, as was the case with the 2017 edition of the tournament.  Exactly as it was with 2015 tournament, Toronto co-hosted the event with Montreal, except this year only the round-robin games were played in Toronto.  Why have the tournament in the same cities as two years prior?  A few reasons: the 375th birthday of Montreal, the 100th birthday of the NHL, which was founded in Montreal; the 150th birthday of Canada, and the 100th birthday of the Toronto Maple Leafs.  Despite all of these stars lining up for a Canadian gold medal at the tournament, Canada lost to the United States in the final.
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Multi-sport Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #year { 
+	display: block; 
+  }  /* show it on small screens */
+  #sport {
+	display: none;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 2000px) {
+  #year { 
+	display: none; 
+  }   /* hide it elsewhere */
+  #sport {
+	display: block;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #panam_logo { 
+	display: block; 
+  }  /* show it on small screens */
+  #panam {
+	display: none;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 2000px) {
+  #panam_logo { 
+	display: none; 
+  }   /* hide it elsewhere */
+  #panam {
+	display: block;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #invictus_logo { 
+	display: block; 
+  }  /* show it on small screens */
+  #invictus {
+	display: none;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 2000px) {
+  #invictus_logo { 
+	display: none; 
+  }   /* hide it elsewhere */
+  #invictus {
+	display: block;
+  }
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fddb73;
+}
+.jumbotron {
+    /* add bootstrap jumbotron background image */
+    background-color: #004c91;
+    /* change bootstrap jumbotron text color */
+    color: #FFF;
+}
+.well {
+    background-color: #004c91;
+    color: #FFF;
+}
+.bg1 {
+    /* The image used */
+    background-image: url("2015_panam.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg2 {
+    /* The image used */
+    background-image: url("2017invictus.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg3 {
+    /* The image used */
+    background-image: url("2015_panam_logo.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.bg4 {
+    /* The image used */
+    background-image: url("2017invictus_logo.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.affix {
+      top: 0;
+      width: 100%;
+} 
+</style>
+</head>
+<body>
+<div class="container" id="year" data-spy="affix">
+  <div class="btn-group btn-group-justified" role="group" width="100%">
+    <a href="index.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="home.png"></button>
+    </a>
+    <a href="multisport.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="games.png"></button>
+    </a>
+    <a href="hockey.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="hockey.png"></button>
+    </a>
+    <a href="basketball.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="basketball.png"></button>
+    </a>
+    <a href="volleyball.html" class="btn-group" role="group">
+    <button type="button" class="btn btn-success"><img src="volleyball.png"></button>
+    </a>
+  </div>
+</div>
+<div class="container" id="sport" data-spy="affix">
+  <div class="btn-group btn-group-justified" role="group" width="100%">
+    <a href="index.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Home</button>
+    </a>
+    <a href="multisport.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Multi-sport Events</button>
+    </a>
+    <a href="hockey.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Hockey</button>
+    </a>
+    <a href="basketball.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Basketball</button>
+    </a>
+    <a href="volleyball.html" class="btn-group btn-group-lg" role="group">
+    <button type="button" class="btn btn-success">Beach Volleyball</button>
+    </a>
+  </div>
+</div>
+<div class="jumbotron" align="center">
+<br>
+<h1>Multi-sport Events</h1>
+</div>
+
+<div class="bg1" id="panam"></div>
+<div class="bg3" id="panam_logo"></div>
+
+<div class="well well-lg" align="left">
+<h2>Pan Am/Parapan Am Games (Summer of 2015)</h2>
+<p>
+Much like any major investment, the decision by the city of Toronto to host the Pan Am/Parapan Am Games was highly criticized.  Attendance was expected to be low, and the already dense Toronto traffic was expected to be even more congested.  However, the Games turned out to be a pleasant surprise for almost everyone involved.  To start with, ticket prices were quite affordable, for round-robin games and medal competitions just the same.  Despite most events not being Olympic qualifiers, many high-profile athletes still competed at these Games, particularly for the host nation.  Current and future NBA players were featured in the men's basketball tournament, and Canada sent its "A" team to the men's volleyball tournament.  Many of the Pan Am region's top swimmers also turned out for the swim meet.  In many cases, the Games were cost-effective, compared to other multi-sport events, in that existing venues were significantly upgraded as opposed to new venues being built.  For example, there was no need for a new stadium, because the Rogers Centre (or SkyDome) was the perfect venue for the opening and closing ceremonies.  The Games leveraged the facilities of three major universities, all in city's core, to host several events such as tennis and track and field at York University, basketball at Ryerson University, and field hockey, swimming, diving and archery at University of Toronto.  Exhibition Place, a favourite local venue, was repurposed to host volleyball and gymnastics, while one of the city's most popular parks, Centennial Park, hosted the BMX competition.  In the end, the Games were the largest multi-sport event in terms of geographic footprint and number of sports, even compared to previous Olympics.  
+</p> 
+</div>
+
+<div class="bg2" id="invictus"></div>
+<div class="bg4" id="invictus_logo"></div>
+
+<div class="well well-lg" align="left">
+<h2>Invictus Games (Fall of 2017)</h2>
+<p>
+Possibly due to how well Toronto hosted the Pan Am/Parapan Am Games two years earlier (see above), and probably because it was the home of his girlfriend Megan Markle, Prince Harry decided to bring his brainchild, the Invictus Games, to Toronto.  Existing venues previously upgraded and newly built for the 2015 Pan Am/Parapan Am Games were put to good use for this 17-sport event that featured soldiers from around the world who suffer from injuries both visible and invisible.  Great effort was made during these Games to open and maintain dialogue regarding PTSD, the aformentioned invisible injury.  Both fierce competition and camaraderie were on display, and witnessed by supporters such as Prince Harry himself, Barack Obama, and Hilary Clinton.  
+</p>
+</div>
+</body>
+</html>
