@@ -5,6 +5,34 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
+@media screen and (min-width: 501px) and (max-width: 2000px) {
+  #chop_s { 
+	display: none; 
+  }  /* show it on small screens */
+  #maki_s {
+        display: none;
+  }
+  #chop_m {
+	display: block;
+  }
+  #maki_m {
+        display: block;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #chop_s { 
+	display: block; 
+  }  /* show it on small screens */
+  #maki_s {
+        display: block;
+  }
+  #chop_m {
+	display: none;
+  }
+  #maki_m {
+        display: none;
+  }
+}
 body {
   font-family: 'Lato', sans-serif;
   background-image: url("pw_maze_white.png");
@@ -122,15 +150,17 @@ a:hover {
 <div class="container">
   <h2>Dining</h2>
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#menu1">Chop Steakhouse and Bar</a></li>
-    <li><a data-toggle="tab" href="#menu2">Makimono Sushi Bar</a></li>
+    <li class="active" id="chop_m"><a data-toggle="tab" href="#menu1">Chop Steakhouse and Bar</a></li>
+    <li id="maki_m"><a data-toggle="tab" href="#menu2">Makimono Sushi Bar</a></li>
+    <li class="active" id="chop_s"><a data-toggle="tab" href="#menu1">Chop</a></li>
+    <li id="maki_s"><a data-toggle="tab" href="#menu2">Makimono</a></li>
   </ul>
   <div class="tab-content">
     <div id="menu1" class="tab-pane fade in active">
       <p><font size="3" face="calibri" color="#1e3f49">
 801 Dixon Road, 416-674-7500
 <br>
-There are only 13 Chop locations across Canada, but one of them is right here in Rexdale.  This restaurant stands out, such that it was the only place in Rexdale featured in the 2017 edition of Summerlicious.  The cool, stylish environment makes you want to come back on a regular basis.  I strongly recommend the eponymous Chop Salad, featuring bacon, chicken, boiled eggs, avocado, fresh greens, and red wine vinaigrette.  Not exactly a vegetarian's salad, but this is steakhouse after all.
+There are only 13 Chop locations across Canada, but one of them is right here in Rexdale.  This restaurant stands out, such that it was the only place in Rexdale featured in the 2017 edition of Summerlicious.  The cool, stylish environment makes you want to come back on a regular basis.  I strongly recommend the eponymous Chop Salad, featuring bacon, chicken, boiled eggs, avocado, fresh greens, and red wine vinaigrette.  Not exactly a vegetarian's salad, but this is a steakhouse after all.
 </font></p>
 <br>
 	<div class="container">

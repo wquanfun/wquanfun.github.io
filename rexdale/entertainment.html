@@ -5,6 +5,34 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
+@media screen and (min-width: 501px) and (max-width: 2000px) {
+  #racing_s { 
+	display: none; 
+  }  /* show it on small screens */
+  #slots_s {
+        display: none;
+  }
+  #racing_m {
+	display: block;
+  }
+  #slots_m {
+        display: block;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #racing_s { 
+	display: block; 
+  }  /* show it on small screens */
+  #slots_s {
+        display: block;
+  }
+  #racing_m {
+	display: none;
+  }
+  #slots_m {
+        display: none;
+  }
+}
 body {
   font-family: 'Lato', sans-serif;
   background-image: url("pw_maze_white.png");
@@ -122,8 +150,10 @@ a:hover {
 <div class="container">
   <h2>Entertainment</h2>
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#menu1">Woodbine Racetrack</a></li>
-    <li><a data-toggle="tab" href="#menu2">Woodbine Slots and Casino</a></li>
+    <li class="active" id="racing_m"><a data-toggle="tab" href="#menu1">Woodbine Racetrack</a></li>
+    <li id="slots_m"><a data-toggle="tab" href="#menu2">Woodbine Slots and Casino</a></li>
+    <li class="active" id="racing_s"><a data-toggle="tab" href="#menu1">Woodbine<br>Racetrack</a></li>
+    <li id="slots_s"><a data-toggle="tab" href="#menu2">Woodbine<br>Slots</a></li>
   </ul>
   <div class="tab-content">
     <div id="menu1" class="tab-pane fade in active">
@@ -146,7 +176,7 @@ Woodbine Racetrack is a must-see in Rexdale.  Horseracing is a major part of Rex
       <p><font size="3" face="calibri" color="#1e3f49">
 555 Rexdale Boulevard
 <br>
-If betting is optional as a horseracing enthusiast, it is mandatory on the floor of Woodbine Slots and Casino.  As stated on the Woodbine Entertainment Web site: "This exciting facility features over 2,500 slot machines, ranging from 1 cent to $5 per play. Try your hand at our virtual table games such as Blackjack, Baccarat, Roulette and Sic Bo or try Wheel of Fortune, Hot Shots, Redhot Jackpots, Mighty Millionaire featuring Michael Jackson and Betty Boop and many more exciting slot games for your gaming enjoyment. Plus visit our new electronic poker room!"
+If betting is optional as a horseracing enthusiast, it is mandatory on the floor of Woodbine Slots and Casino.  As stated on the Woodbine Entertainment Web site: "This exciting facility features over 2,500 slot machines, ranging from 1¢ to $5 per play. Try your hand at our virtual table games such as Blackjack, Baccarat, Roulette and Sic Bo or try Wheel of Fortune, Hot Shots, Redhot Jackpots, Mighty Millionaire featuring Michael Jackson and Betty Boop and many more exciting slot games for your gaming enjoyment. Plus visit our new electronic poker room!"
       </font></p>
 <br>
 	<div class="container">
